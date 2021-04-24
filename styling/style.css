@@ -1,8 +1,10 @@
 *{margin:0px;}
+* {box-sizing:border-box;}
 .wrapper
 	{
 	width:100%;
 	height:100%;
+	
 	}
 .header
 	{
@@ -18,85 +20,161 @@
 	{
 	width:100%;
 	height:20%;
+	position:fixed;
+	}
+.header .topheader .thleft
+	{
+	height:100px;
+	width:110px;
+	float:left;
+	margin-left:120px;
+	margin-top:50px;
+	}
+.header .topheader .thright
+	{
+	height:70%;
+	width:50%;
 	float:right;
-	text-align: right;
-	margin-top:90px;
-	margin-right:180px;
+	margin-top:50px;
+	margin-right:50px;
 	}
-.header .topheader nav
+.header .topheader .thright nav ul li 
 	{
-	padding:10px 10px 10px -100px;
 	display:inline-table;
-	/*position:relative;*/
-	
+	position:relative;
+	list-style-type:none;
+	padding:5px; 
 	}
-
-.header .topheader nav ul li a
+.header .topheader .thright nav ul li a
 	{
-	/*display:block;*/
+	display:block;
 	text-decoration:none;
-	padding:0px;
+	padding:30px;
 	color:white;
 	transition:1s;
-	font-size:25px;
-	font-family: 'Orbitron', sans-serif;
+	font-size:20px;
+	font-family: 'Zen Dots', cursive;
 	font-weight: bold;
 	}
-.header .topheader nav ul li
-	{
-	float:left;
-	padding:15px;
-	list-style-type:none;
-	}
-	/*Slider Start*/
 .slide
 	{
 	width:100%;
-	height:100%;
+	height:80%;
 	background:white;
 	}
-.slide .word
+.slide .top h6
 	{
-	height:20%;
-	width:100%
-	}
-.slide .word h6
-	{
-	font-size:70px;
-	text-align:center;
-	background: #B8E1FC;
-background: -webkit-repeating-radial-gradient(ellipse farthest-side at top center, #B8E1FC 0%, #231421 100%);
-background: -moz-repeating-radial-gradient(ellipse farthest-side at top center, #B8E1FC 0%, #231421 100%);
-background: repeating-radial-gradient(ellipse farthest-side at top center, #B8E1FC 0%, #231421 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-	}
-.slide .content
-	{
-	height:20%;
 	width:100%;
+	height:60px;
+	text-align:center;
+	font-family: 'Zen Dots', cursive;
+	font-size:50px;
 	}
-.slide .content .left
+.slide .left 
 	{
-	height:300%;
 	width:30%;
-	background:url('../image/laptop.jpg');
+	height:70%;
 	float:left;
+	background:url("../image/laptop.jpg");
+	margin-left:10%; 
 	background-size:100% 100%;
-	background-repeat:no-repeat;
-	padding-right:10px;
+	margin-top:5%; 
 	}
-.slide .content .right
+.slide .right
 	{
-	height:300%;
-	width:67%;
-	float:right;
+	width:50%;
+	height:70%;
+	float:left;
+	margin-left:5%; 
+	margin-top:5%;
+	font-size:20px; 
+	font-family: 'Luckiest Guy', cursive;
+	}
+.photo
+	{
+	height:70%;
+	width:100%;
+	background:purple; 
+	}
+.photo h6
+	{
+	font-size:250%;
+	text-align:center;
+	padding-top:30px; 
+	}
+.photo .left
+	{
+	width:30%;
+	height:70%;
+	float:left;
+	background:url("../image/laptop.jpg");
+	margin-left:10%; 
+	background-size:100% 100%;
+	margin-top:2%; 
+	}
+.photo .right p
+	{
+	width:50%;
+	height:70%;
+	float:left;
+	margin-left:5%; 
+	margin-top:5%;
+	font-size:20px; 
+	font-family: 'Luckiest Guy', cursive;
+	}
+.freespace
+	{
+	width:100%;
+	height:5%;
+	}
+.footer
+	{
+	width:100%;
+	height:50%;
+	background: rgb(5,51,76);
+background: -webkit-linear-gradient(207deg, rgba(5,51,76,1) 38%, rgba(11,11,36,0) 38%, rgba(13,175,176,0) 38%, rgba(2,0,36,1) 38%, rgba(0,212,255,1) 100%);
+background: -o-linear-gradient(207deg, rgba(5,51,76,1) 38%, rgba(11,11,36,0) 38%, rgba(13,175,176,0) 38%, rgba(2,0,36,1) 38%, rgba(0,212,255,1) 100%);
+background: linear-gradient(297deg, rgba(5,51,76,1) 38%, rgba(11,11,36,0) 38%, rgba(13,175,176,0) 38%, rgba(2,0,36,1) 38%, rgba(0,212,255,1) 100%);
 	
-	}	
-.slide .content .right h6
+	}
+.footer .content
 	{
-	font-size:25px;	
-	font-family: 'Fredoka One', cursive;
-background: rgb(2,0,36);
-background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(13,175,176,0.7822479333530288) 94%, rgba(0,212,255,1) 100%);
-	}	
+	width:100%;
+	height:50%;
+	}
+.footer .content .col1
+	{
+	margin-top:50px;
+	margin-left:120px;
+	float:left;
+	width:20%;
+	height:100%;
+	background:red; 
+	}
+.footer .content .col2
+	{
+	margin-top:50px;
+	margin-left:180px;
+	float:left;
+	width:20%;
+	height:100%;
+	background:blue; 
+	}
+footer .content .col3
+	{
+	margin-top:50px;
+	
+	float:right;
+	width:10%;
+	height:100%;
+	background:blue; 
+	}
+footer .content .col4
+	{
+	margin-top:50px;
+	margin-right:280px;
+	float:right;
+	width:20%;
+	height:100%;
+	background:black; 
+	}
